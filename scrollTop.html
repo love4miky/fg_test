@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Scroll to Top</title>
+
+	<style type="text/css">
+		.content{margin:50px;height:1200px;background:-webkit-linear-gradient(red,blue);background:-moz-linear-gradient(red,blue);background:linear-gradient(red,blue)}
+		.scrollTop{position:relative;display:block;margin-bottom:50px;font-size:20px;text-align:center}
+	</style>
+</head>
+<body>
+	<div class="content"></div>
+	<a href="#" class="scrollTop">scroll to top</a>
+</body>
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+		    $('.scrollTop').click(function(){
+				$('html, body').animate({scrollTop : 0},800);
+				return false;
+			});
+		});
+	</script>
+</html>
